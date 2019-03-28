@@ -1,0 +1,19 @@
+<p>
+  blog-page works!
+
+  {{ authService.isLoggedIn }}
+
+  <bs-button *ngFor="let n of names" [color]="myHelloButtonColor" (click)="helloWasClicked($event)">{{n}}</bs-button>
+
+  
+</p>
+<p bsTextColor="success">success!</p>
+
+<div class="card" *ngFor="let b of blogs">
+    <div class="card-header">
+        {{ b.title }} - {{  b.author }}
+    </div>
+    <div class="card-content">
+      {{ b.content }}
+    </div>
+</div>
